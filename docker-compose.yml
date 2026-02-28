@@ -1,0 +1,20 @@
+services:
+  # Backend: FastAPI + Python
+  backend:
+    build: ./backend
+    container_name: quizgenius-backend
+    ports:
+      - "3001:3001"
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
+
+  # Frontend: React + Nginx
+  frontend:
+    build: ./frontend
+    container_name: quizgenius-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

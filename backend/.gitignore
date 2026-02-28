@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.env/
+
+# Environment Variables
+.env
+
+# Logs
+backend.log
+*.log
+
+# FastAPI / Uvicorn
+.pytest_cache/

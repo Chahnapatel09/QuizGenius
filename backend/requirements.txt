@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+boto3
+bcrypt
+python-jose[cryptography]
+python-dotenv
+openai
+python-multipart
+pypdf2
+groq
