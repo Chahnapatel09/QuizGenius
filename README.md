@@ -109,4 +109,4 @@ Because this project uses **Terraform**, deploying the entire stack takes less t
 
 ---
 
-*Built by Chahna Patel for Cloud Computing.*
+
